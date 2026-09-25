@@ -28,8 +28,7 @@ function enviarDados() {
     })
   })
   .then(() => {
-    document.getElementById("etapa-presente").classList.add("hidden");
-    document.getElementById("etapa-sucesso").classList.remove("hidden");
+    window.location.href = "obrigado.html";
   })
   .catch(error => {
     alert("Ocorreu um erro ao salvar. Tente novamente.");
