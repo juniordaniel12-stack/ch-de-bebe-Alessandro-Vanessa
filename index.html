@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chá de Bebê - Confirmação e Presentes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <!-- ETAPA 1: Nome do Convidado -->
+    <div id="etapa-nome">
+      <h2>Chá de Bebê</h2>
+      <p>Por favor, digite seu nome para confirmar presença:</p>
+      <input type="text" id="input-nome" placeholder="Seu nome completo" required>
+      <button onclick="avancarParaPresentes()">Confirmar Nome</button>
+    </div>
+
+    <!-- ETAPA 2: Escolha do Presente -->
+    <div id="etapa-presente" class="hidden">
+      <h2>Escolha o Presente</h2>
+      <p>Selecione uma opção de presente:</p>
+      <select id="select-presente">
+        <option value="Fraldas">Fraldas</option>
+        <option value="Lenço">Lenço Umedecido</option>
+        <option value="Talco">Talco</option>
+        <option value="Manta">Manta</option>
+        <option value="Mamadeira">Mamadeira</option>
+      </select>
+      <button onclick="enviarDados()">Finalizar</button>
+    </div>
+
+    <!-- MENSAGEM DE SUCESSO -->
+    <div id="etapa-sucesso" class="hidden">
+      <h2>Obrigado!</h2>
+      <p>Sua confirmação e escolha de presente foram salvas com sucesso!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
