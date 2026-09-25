@@ -21,13 +21,52 @@
     <div id="etapa-presente" class="hidden">
       <h2>Escolha o Presente</h2>
       <p>Selecione uma opção de presente:</p>
-      <select id="select-presente">
-        <option value="Fraldas">Fraldas</option>
-        <option value="Lenço">Lenço Umedecido</option>
-        <option value="Talco">Talco</option>
-        <option value="Manta">Manta</option>
-        <option value="Mamadeira">Mamadeira</option>
-      </select>
+      <select id="select-presente" required>
+  <option value="">Selecione uma opção</option>
+
+  <optgroup label="🧷 Fraldas">
+    <option value="Fralda PP">Fralda PP</option>
+    <option value="Fralda P">Fralda P</option>
+    <option value="Fralda M">Fralda M</option>
+    <option value="Fralda G">Fralda G</option>
+  </optgroup>
+
+  <optgroup label="🧻 Fralda + Lenço Umedecido">
+    <option value="Fralda PP + Lenço Umedecido">
+      Fralda PP + Lenço Umedecido
+    </option>
+
+    <option value="Fralda P + Lenço Umedecido">
+      Fralda P + Lenço Umedecido
+    </option>
+
+    <option value="Fralda M + Lenço Umedecido">
+      Fralda M + Lenço Umedecido
+    </option>
+
+    <option value="Fralda G + Lenço Umedecido">
+      Fralda G + Lenço Umedecido
+    </option>
+  </optgroup>
+
+  <optgroup label="🍼 Fralda + Talco">
+    <option value="Fralda PP + Talco">
+      Fralda PP + Talco
+    </option>
+
+    <option value="Fralda P + Talco">
+      Fralda P + Talco
+    </option>
+
+    <option value="Fralda M + Talco">
+      Fralda M + Talco
+    </option>
+
+    <option value="Fralda G + Talco">
+      Fralda G + Talco
+    </option>
+  </optgroup>
+</select>
       <button onclick="enviarDados()">Finalizar</button>
     </div>
 
